@@ -84,9 +84,68 @@
 
 ## 🛠️ Installation
 
+## 🪟 Windows Usage
+
+### Install Python Dependency
+
+Open **Command Prompt** or **PowerShell**:
+
+```powershell
+pip install -r requirements.txt
+```
+
+Or install the required package manually:
+
+```powershell
+pip install termcolor
+```
+
+### Run the Tool
+
+```powershell
+python cidr.py
+```
+
+If multiple Python versions are installed:
+
+```powershell
+py cidr.py
+```
+
+### Example
+
+```powershell
+C:\cidr-tool> python cidr.py
+
+[?] Enter CIDR (e.g. 192.168.1.0/24) : 192.168.1.0/24
+[?] Save host list to file? (y/n)     : y
+[?] Output filename                   : targets.txt
+[?] Show all usable hosts? (y/n)      : n
+```
+
+### Use Output with Nmap
+
+```powershell
+python cidr.py
+nmap -iL targets.txt
+```
+
+### Common Issues
+
+| Issue                            | Fix                                                            |
+| -------------------------------- | -------------------------------------------------------------- |
+| `'python' is not recognized`     | Reinstall Python and enable **Add Python to PATH**             |
+| `ModuleNotFoundError: termcolor` | Run `pip install termcolor`                                    |
+| Permission denied when saving    | Run Command Prompt as Administrator or choose another folder   |
+| Colored text not displaying      | Use Windows Terminal, PowerShell 7+, or Windows 10/11 Terminal |
+
+```
+```
+
+
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/cidr-tool.git
+git clone https://github.com/Murshid777/cidr-tool.git
 cd cidr-tool
 
 # Install dependency
@@ -103,7 +162,7 @@ sudo apt install python3-termcolor -y
 ## 🚀 Usage
 
 ```bash
-python3 cidr_range.py
+python3 cidr.py
 ```
 
 Follow the interactive prompts:
@@ -117,7 +176,7 @@ Follow the interactive prompts:
 
 **Pipe to Nmap:**
 ```bash
-python3 cidr_range.py   # save to targets.txt
+python3 cidr.py   # save to targets.txt
 nmap -iL targets.txt
 ```
 
@@ -142,7 +201,7 @@ nmap -iL targets.txt
 
 ```
 cidr-tool/
-├── cidr_range.py       # Main script
+├── cidr.py       # Main script
 ├── requirements.txt    # Python dependencies
 ├── LICENSE             # MIT License
 └── README.md           # This file
