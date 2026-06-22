@@ -260,7 +260,7 @@ cidr-tool/
 
 **Murshid**
 - Offensive Security Enthusiast
-- Platforms: HackTheBox · TryHackMe · Bugcrowd ·
+- Platforms: HackTheBox · TryHackMe · Bugcrowd
 - Working toward: eJPT → PNPT → OSCP
 
 ---
