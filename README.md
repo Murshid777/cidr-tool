@@ -129,12 +129,13 @@ C:\cidr-tool> python cidr.py
 
 ```
 
-##🐧 Linux (Kali, Parrot, Ubuntu, Debian)
+##🐧 Linux 
 
 ```bash
 # Clone the repo
 git clone https://github.com/Murshid777/cidr-tool.git
 cd cidr-tool
+```
 
 # Install dependency
 pip install -r requirements.txt --break-system-packages
