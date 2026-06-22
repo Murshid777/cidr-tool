@@ -5,6 +5,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-cyan?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Windows-Supported-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-Supported-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Made%20by-Murshid-red?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Version-1.0.0-yellow?style=for-the-badge"/>
@@ -117,19 +119,6 @@ py cidr.py
 ```powershell
 C:\cidr-tool> python cidr.py
 
-[?] Enter CIDR (e.g. 192.168.1.0/24) : 192.168.1.0/24
-[?] Save host list to file? (y/n)     : y
-[?] Output filename                   : targets.txt
-[?] Show all usable hosts? (y/n)      : n
-```
-
-### Use Output with Nmap
-
-```powershell
-python cidr.py
-nmap -iL targets.txt
-```
-
 ### Common Issues
 
 | Issue                            | Fix                                                            |
@@ -140,8 +129,8 @@ nmap -iL targets.txt
 | Colored text not displaying      | Use Windows Terminal, PowerShell 7+, or Windows 10/11 Terminal |
 
 ```
-```
 
+##🐧 Linux (Kali, Parrot, Ubuntu, Debian)
 
 ```bash
 # Clone the repo
