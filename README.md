@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  A stylish, interactive CIDR IP Range Analyzer for security researchers.<br>
+  A stylish, interactive CIDR IP Range Analyzer for network engineers and security researchers.<br>
 
 ---
 
