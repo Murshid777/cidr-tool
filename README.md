@@ -136,7 +136,6 @@ py cidr.py
 
 ```bash
 git clone https://github.com/Murshid777/cidr-tool.git
-cd cidr-tool
 ```
 
 #### 2️⃣ Install Dependencies
@@ -185,7 +184,7 @@ chmod +x cidr.py
 
 | Distribution | Status       |
 | ------------ | ------------ |
-| WINDOWS      | ✅ Tested     |
+| Windows      | ✅ Tested     |
 | Ubuntu       | ✅ Tested     |
 | Debian       | ✅ Tested     |
 | Linux Mint   | ✅ Supported  |
