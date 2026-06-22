@@ -68,7 +68,7 @@
 
 | Feature | Description |
 |---|---|
-| 🎨 Stylish UI | Sublist3r-inspired terminal design with colors |
+| 🎨 Stylish UI | Stylish terminal design with colors |
 | 📊 Progress Bar | Animated progress bar while scanning |
 | 🌐 Network Info | Network ID, Broadcast, Subnet, Wildcard mask |
 | 🔢 Binary Subnet | Shows subnet mask in binary format |
@@ -162,13 +162,6 @@ Follow the interactive prompts:
 [?] Show all usable hosts? (y/n)      : n
 ```
 
-**Pipe to Nmap:**
-```bash
-python3 cidr.py   # save to targets.txt
-nmap -iL targets.txt
-```
-
----
 
 ## 🧪 Tested Inputs
 
