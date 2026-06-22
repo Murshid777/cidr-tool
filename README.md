@@ -91,7 +91,6 @@
 
 ```powershell
 git clone https://github.com/Murshid777/cidr-tool.git
-cd cidr-tool
 ```
 
 #### 2️⃣ Install Dependencies
@@ -131,7 +130,7 @@ py cidr.py
 
 ---
 
-### 🐧 Linux (Kali, Parrot, Ubuntu, Debian)
+### 🐧 Linux
 
 #### 1️⃣ Clone the Repository
 
@@ -186,10 +185,9 @@ chmod +x cidr.py
 
 | Distribution | Status       |
 | ------------ | ------------ |
-| Kali Linux   | ✅ Tested     |
-| Parrot OS    | ✅ Tested     |
-| Ubuntu       | ✅ Supported  |
-| Debian       | ✅ Supported  |
+| WINDOWS      | ✅ Tested     |
+| Ubuntu       | ✅ Tested     |
+| Debian       | ✅ Tested     |
 | Linux Mint   | ✅ Supported  |
 | Arch Linux   | ✅ Compatible |
 | Fedora       | ✅ Compatible |
