@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.0-blue?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Windows-Supported-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-Supported-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
