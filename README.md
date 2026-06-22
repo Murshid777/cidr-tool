@@ -239,7 +239,7 @@ Last Host                → 192.168.1.254
 
 ```
 cidr-tool/
-├── cidr.py       # Main script
+├── cidr.py             # Main script
 ├── requirements.txt    # Python dependencies
 ├── LICENSE             # MIT License
 └── README.md           # This file
