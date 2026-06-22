@@ -85,23 +85,30 @@
 
 ## 🛠️ Installation
 
-## 🪟 Windows Usage
+### 🪟 Windows
 
-### Install Python Dependency
+#### 1️⃣ Clone the Repository
 
-Open **Command Prompt** or **PowerShell**:
+```powershell
+git clone https://github.com/Murshid777/cidr-tool.git
+cd cidr-tool
+```
+
+#### 2️⃣ Install Dependencies
+
+Using pip:
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-Or install the required package manually:
+Or install manually:
 
 ```powershell
 pip install termcolor
 ```
 
-### Run the Tool
+#### 3️⃣ Run the Tool
 
 ```powershell
 python cidr.py
@@ -113,55 +120,127 @@ If multiple Python versions are installed:
 py cidr.py
 ```
 
-### Example
+#### ⚠️ Common Issues
 
-```powershell
-C:\cidr-tool> python cidr.py
+| Issue                            | Fix                                                |
+| -------------------------------- | -------------------------------------------------- |
+| `'python' is not recognized`     | Reinstall Python and enable **Add Python to PATH** |
+| `ModuleNotFoundError: termcolor` | Run `pip install termcolor`                        |
+| Permission denied when saving    | Run Command Prompt as Administrator                |
+| Colored text not displaying      | Use Windows Terminal or PowerShell 7+              |
 
-### Common Issues
+---
 
-| Issue                            | Fix                                                            |
-| -------------------------------- | -------------------------------------------------------------- |
-| `'python' is not recognized`     | Reinstall Python and enable **Add Python to PATH**             |
-| `ModuleNotFoundError: termcolor` | Run `pip install termcolor`                                    |
-| Permission denied when saving    | Run Command Prompt as Administrator or choose another folder   |
-| Colored text not displaying      | Use Windows Terminal, PowerShell 7+, or Windows 10/11 Terminal |
+### 🐧 Linux (Kali, Parrot, Ubuntu, Debian)
 
-```
-
-##🐧 Linux 
+#### 1️⃣ Clone the Repository
 
 ```bash
-# Clone the repo
 git clone https://github.com/Murshid777/cidr-tool.git
 cd cidr-tool
 ```
 
-# Install dependency
-pip install -r requirements.txt --break-system-packages
+#### 2️⃣ Install Dependencies
+
+Using pip:
+
+```bash
+pip3 install -r requirements.txt --break-system-packages
 ```
 
 Or via apt:
+
 ```bash
+sudo apt update
 sudo apt install python3-termcolor -y
 ```
 
----
-
-## 🚀 Usage
+#### 3️⃣ Run the Tool
 
 ```bash
 python3 cidr.py
 ```
 
-Follow the interactive prompts:
+#### ⚠️ Common Issues
 
+**Missing termcolor**
+
+```bash
+pip3 install termcolor
 ```
+
+**Python not installed**
+
+```bash
+sudo apt update
+sudo apt install python3 python3-pip -y
+```
+
+**Permission denied**
+
+```bash
+chmod +x cidr.py
+```
+
+#### ✅ Supported Distributions
+
+| Distribution | Status       |
+| ------------ | ------------ |
+| Kali Linux   | ✅ Tested     |
+| Parrot OS    | ✅ Tested     |
+| Ubuntu       | ✅ Supported  |
+| Debian       | ✅ Supported  |
+| Linux Mint   | ✅ Supported  |
+| Arch Linux   | ✅ Compatible |
+| Fedora       | ✅ Compatible |
+
+---
+
+## 🚀 Usage
+
+### Start the Tool
+
+**Linux**
+
+```bash
+python3 cidr.py
+```
+
+**Windows**
+
+```powershell
+python cidr.py
+```
+
+### Example Session
+
+```text
 [?] Enter CIDR (e.g. 192.168.1.0/24) : 192.168.1.0/24
 [?] Save host list to file? (y/n)     : y
 [?] Output filename                   : targets.txt
 [?] Show all usable hosts? (y/n)      : n
 ```
+
+### Use Output with Nmap
+
+```bash
+python3 cidr.py
+nmap -iL targets.txt
+```
+
+### Example Output
+
+```text
+Target CIDR              → 192.168.1.0/24
+Network ID               → 192.168.1.0
+Broadcast Address        → 192.168.1.255
+Subnet Mask              → 255.255.255.0
+Wildcard Mask            → 0.0.0.255
+Usable Hosts             → 254
+First Host               → 192.168.1.1
+Last Host                → 192.168.1.254
+```
+
 
 
 ## 🧪 Tested Inputs
