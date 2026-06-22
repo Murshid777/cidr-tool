@@ -221,12 +221,6 @@ python cidr.py
 [?] Show all usable hosts? (y/n)      : n
 ```
 
-### Use Output with Nmap
-
-```bash
-python3 cidr.py
-nmap -iL targets.txt
-```
 
 ### Example Output
 
