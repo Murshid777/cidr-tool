@@ -95,13 +95,7 @@ git clone https://github.com/Murshid777/cidr-tool.git
 
 #### 2️⃣ Install Dependencies
 
-Using pip:
-
-```powershell
-pip install -r requirements.txt
-```
-
-Or install manually:
+requirement installation:
 
 ```powershell
 pip install termcolor
@@ -140,13 +134,7 @@ git clone https://github.com/Murshid777/cidr-tool.git
 
 #### 2️⃣ Install Dependencies
 
-Using pip:
-
-```bash
-pip3 install -r requirements.txt --break-system-packages
-```
-
-Or via apt:
+requirement-installation:
 
 ```bash
 sudo apt update
