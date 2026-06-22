@@ -12,9 +12,7 @@
 </p>
 
 <p align="center">
-  A stylish, interactive CIDR IP Range Analyzer for pentesters and security researchers.<br>
-  Inspired by the design of <b>Sublist3r</b>.
-</p>
+  A stylish, interactive CIDR IP Range Analyzer for security researchers.<br>
 
 ---
 
